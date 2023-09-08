@@ -3,3 +3,8 @@
 members = [
     "cargo-release-test",
 ]
+
+[workspace.metadata.release]
+pre-release-replacements = [
+	"cargo-release-test/Cargo.toml"
+]
