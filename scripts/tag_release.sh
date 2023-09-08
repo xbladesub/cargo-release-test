@@ -16,6 +16,8 @@ git checkout -b "${RELEASE_BRANCH}"
 # Specify the version component (major, minor, or patch)
 COMPONENT=${COMPONENT:-patch}
 
+export CARGO_REGISTRY_TOKEN="dummy_token"
+
 # Bump the version using cargo-release
 cargo release ${COMPONENT} --execute
 
