@@ -16,10 +16,8 @@ git checkout -b "${RELEASE_BRANCH}"
 # Specify the version component (major, minor, or patch)
 COMPONENT=${COMPONENT:-patch}
 
-export CARGO_REGISTRY_TOKEN="dummy_token"
-
 # Bump the version using cargo-release
-cargo release ${COMPONENT} --execute
+cargo release ${COMPONENT} --dry-run
 
 # Push the changes and the newly created tag to the remote repository
 # git push origin "${RELEASE_BRANCH}"
