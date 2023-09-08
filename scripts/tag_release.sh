@@ -17,7 +17,7 @@ git checkout -b "${RELEASE_BRANCH}"
 COMPONENT=${COMPONENT:-patch}
 
 # Bump the version using cargo-release
-cargo release ${COMPONENT} -p cargo-release-test --manifest-path cargo-release-test/Cargo.toml --execute
+cargo release ${COMPONENT} -p cargo-release-test  --execute
 
 git add . && git commit -m "Bump version to ${RELEASE}"
 
