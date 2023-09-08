@@ -19,6 +19,8 @@ COMPONENT=${COMPONENT:-patch}
 # Bump the version using cargo-release
 cargo release ${COMPONENT} -p cargo-release-test
 
+git add . && git commit -m "Bump version to ${RELEASE}"
+
 # Push the changes and the newly created tag to the remote repository
 # git push origin "${RELEASE_BRANCH}"
 # git push --tags
