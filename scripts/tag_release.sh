@@ -17,7 +17,7 @@ git checkout -b "${RELEASE_BRANCH}"
 COMPONENT=${COMPONENT:-patch}
 
 # Bump the version using cargo-release
-cargo release ${COMPONENT} -p cargo-release-test
+cargo release ${COMPONENT} -p cargo-release-test --commit-files
 
 git add . && git commit -m "Bump version to ${RELEASE}"
 
