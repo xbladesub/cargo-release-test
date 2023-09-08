@@ -7,8 +7,11 @@ git pull --ff-only
 # Set the release version
 RELEASE=${RELEASE:-`date --iso-8601`}
 
+# Create a release branch
+RELEASE_BRANCH="release/${RELEASE}"
+
 # Create and switch to the release branch
-git checkout -b release/${RELEASE}
+git checkout -b "${RELEASE_BRANCH}"
 
 # Specify the version component (major, minor, or patch)
 COMPONENT=${COMPONENT:-patch}
