@@ -7,14 +7,14 @@ license = "MIT"
 documentation = ""
 homepage = ""
 repository = "https://example.com"
-# release = "Current release: 0.1.0"
+release = "Current release: 0.1.0"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
 
 
-# [package.metadata.release]
-# pre-release-replacements = [
-#   {file="Cargo.toml", search="Current release: [a-z0-9\\.-]+", replace="Current release: {{version}}"} ,
-# ]
+[package.metadata.release]
+pre-release-replacements = [
+  {file="Cargo.toml", search="Current release: [a-z0-9\\.-]+", replace="Current release: {{version}}"} ,
+]
