@@ -17,7 +17,7 @@ git checkout -b "${RELEASE_BRANCH}"
 COMPONENT=${COMPONENT:-patch}
 
 # Bump the version using cargo-release
-cargo release ${COMPONENT} -p cargo-release-test --dry-run
+cargo release ${COMPONENT} -p cargo-release-test
 
 # Push the changes and the newly created tag to the remote repository
 # git push origin "${RELEASE_BRANCH}"
