@@ -1,3 +1,2 @@
-allow-branch = ["main"]
 tag-name = "v{{version}}"
 pre-release-commit-message = "Bump version: {{prev_version}} → {{version}}"
