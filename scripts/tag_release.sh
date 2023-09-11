@@ -1,8 +1,7 @@
 #!/bin/bash -eu
 
 # Checkout the master branch and ensure it's up to date
-git checkout main
-git pull --ff-only
+git checkout main && git pull --ff-only
 
 # Set the release version
 RELEASE=${RELEASE:-`date --iso-8601`}
@@ -17,9 +16,9 @@ git checkout -b "${RELEASE_BRANCH}"
 COMPONENT=${COMPONENT:-patch}
 
 # Bump the version using cargo-release
-cargo release ${COMPONENT} -p cargo-release-test --execute --verbose
+cargo release ${COMPONENT} -p cargo-release-test --verbose
 
-git add . && git commit -m "Bump version to ${RELEASE}"
+# git add . && git commit -m "Bump version to ${RELEASE}"
 
 # Push the changes and the newly created tag to the remote repository
 # git push origin "${RELEASE_BRANCH}"
