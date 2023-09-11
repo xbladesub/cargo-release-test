@@ -16,8 +16,7 @@ git checkout -b "${RELEASE_BRANCH}"
 COMPONENT=${COMPONENT:-patch}
 
 # Bump the version using cargo-release
-cargo release ${COMPONENT} -p cargo-release-test --verbose
-
+cargo release -p cargo-release-test ${COMPONENT} --execute --no-publish --no-confirm --verbose
 # git add . && git commit -m "Bump version to ${RELEASE}"
 
 # Push the changes and the newly created tag to the remote repository
