@@ -9,4 +9,4 @@ git checkout -b release/${RELEASE}
 COMPONENT=${COMPONENT:-patch}
 # bump release version
 TAG=1 COMPONENT=$COMPONENT ./scripts/bumpversion.sh
-git push && git push --tags
+# git push && git push --tags
