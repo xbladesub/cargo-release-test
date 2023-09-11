@@ -18,7 +18,7 @@ repository = "https://example.com"
 pre-release-replacements = [
   {file="../CHANGELOG.md", search="""
 Unreleased
-	----------
+---------
 """, replace="""
 Unreleased
 ---------
