@@ -16,5 +16,15 @@ repository = "https://example.com"
 
 [package.metadata.release]
 pre-release-replacements = [
-  {file="../CHANGELOG.md", search="Unreleased", replace="test"} ,
+  {file="../CHANGELOG.md", search="Unreleased", replace="""
+Unreleased
+---------
+	
+-### Added
+-### Changed
+-### Fixed
+	
+[{new_version}]
+----------
+"""} ,
 ]
