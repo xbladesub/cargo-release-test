@@ -1,0 +1,4 @@
+# pre-release-hook = ["./hook.sh", "一", "два", "Three", "4"]
+# consolidate-commits = false
+allow-branch = ["main"]
+tag-message = "v{{version}}"
