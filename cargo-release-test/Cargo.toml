@@ -14,7 +14,7 @@ repository = "https://example.com"
 [dependencies]
 
 
-# [package.metadata.release]
-# pre-release-replacements = [
-#   {file="Cargo.toml", search="Current release: [a-z0-9\\.-]+", replace="Current release: {{version}}"} ,
-# ]
+[package.metadata.release]
+pre-release-replacements = [
+  {file="Cargo.toml", search="Current release: [a-z0-9\\.-]+", replace="Current release: {{version}}"} ,
+]
