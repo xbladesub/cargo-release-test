@@ -11,3 +11,10 @@ Unreleased
 -### Added
 -### Changed
 -### Fixed
+	
+0.1.1
+----------
+	
+-### Added
+-### Changed
+-### Fixed
