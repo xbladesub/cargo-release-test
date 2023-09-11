@@ -2,3 +2,4 @@
 # consolidate-commits = false
 allow-branch = ["main"]
 tag-name = "v{{version}}"
+pre-release-commit-message = "abc"
