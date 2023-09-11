@@ -1,2 +1,2 @@
 tag-name = "v{{version}}"
-release-commit-message = "Bump version: {{prev_version}} → {{version}}"
+pre-release-commit-message = "Bump version: {{prev_version}} → {{version}}"
